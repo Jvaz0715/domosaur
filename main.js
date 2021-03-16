@@ -46,6 +46,14 @@ button.addEventListener('click', changeBackground)
 // Event Listener 5
 const biggify = document.querySelector('#biggify');
 function growImg() {
-    biggify.style.width = "200px";
+    biggify.style.width = "200px"
 }
+
 biggify.addEventListener("mouseover", growImg)
+
+
+// Stretch goal 2
+function returnImg() {
+    biggify.style.width = "162px"
+}
+biggify.addEventListener("mouseout", returnImg)
