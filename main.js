@@ -41,10 +41,11 @@ function growImg() {
 
 biggify.addEventListener("mouseover", growImg)
 
- const toggleRow = document.querySelector('#row')
-
+ 
  function changeBackground() {
-    toggleRow.style.backgroundColor = "black";
+    document.querySelector('#row').style.backgroundColor = "black";
 }
+
+const button = document.querySelector('#toggle')
 
 button.addEventListener('click', changeBackground)
