@@ -11,7 +11,7 @@ hideMe.style.display = "none";
 
 const triceratops = document.querySelector('#triceratops');
 
-triceratops.width = "324px";
+triceratops.style.width = "324px";
 
 function changeColor() {
     messWithMe.style.color ='orange';
@@ -36,13 +36,15 @@ feathers.addEventListener('click', transparent)
 const biggify = document.querySelector('#biggify');
 
 function growImg() {
-    biggify.width = "200px";
+    biggify.style.width = "200px";
 }
 
 biggify.addEventListener("mouseover", growImg)
 
-const toggle = document.querySelector('#toggle');
+ const toggleRow = document.querySelector('#row')
 
-function changeBackground() {
-    
+ function changeBackground() {
+    toggleRow.style.backgroundColor = "black";
 }
+
+button.addEventListener('click', changeBackground)
