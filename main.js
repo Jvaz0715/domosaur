@@ -35,7 +35,11 @@ feathers.addEventListener('click', transparent);
 
 // Event Listener 4
 function changeBackground() {
-    document.querySelector('#row').style.backgroundColor = "black";
+    if (document.querySelector('#row').style.backgroundColor == "") {
+        document.querySelector('#row').style.backgroundColor = 'black';
+    } else if (document.querySelector('#row').style.backgroundColor = 'black') {
+        document.querySelector('#row').style.backgroundColor = ""
+    } 
 }
 
 const button = document.querySelector('#toggle')
